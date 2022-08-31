@@ -1,0 +1,13 @@
+=begin catalog
+
+=begin content
+=begin words
+=object label: id=label.words, style=label_words
+=end words
+
+=begin actions
+=object button: id=btn.repeat, label="Listen and repeat", script=listen_and_repeat, style=btn_action
+=end actions
+=end content
+
+=end catalog

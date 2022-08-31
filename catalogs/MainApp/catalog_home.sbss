@@ -1,0 +1,34 @@
+import themes.sbss
+
+if $SCREEN_WIDTH > 4.7
+    $_WORDS_LABEL_WIDTH = 0.7pw
+    $_WORDS_LABEL_WIDTH = 0.4ph
+    $_WORDS_TEXT_SIZE = 2.3
+    $_ACTIONS_TOP_MARGIN = 80dp
+    $_ACTION_BUTTON_WIDTH = 240dp
+    $_ACTION_BUTTON_HEIGHT = 64dp
+    $_ACTION_BUTTON_BORDER_RADIUS = 16dp
+    $_ACTION_TEXT_SIZE = 1.4
+else
+    $_WORDS_LABEL_WIDTH = 0.8pw
+    $_WORDS_LABEL_HEIGHT = 0.3ph
+    $_WORDS_TEXT_SIZE = 2.0
+    $_ACTIONS_TOP_MARGIN = 50dp
+    $_ACTION_BUTTON_WIDTH = 200dp
+    $_ACTION_BUTTON_HEIGHT = 52dp
+    $_ACTION_BUTTON_BORDER_RADIUS = 5dp
+    $_ACTION_TEXT_SIZE = 1.3
+end
+
+#label_words: width=$_WORDS_LABEL_WIDTH, height=$_WORDS_LABEL_WIDTH, \
+        font-family=$SERIF_BOLD, font-size=$_WORDS_TEXT_SIZE, text-align=center, \
+        line-break-mode=word-wrap, number-of-lines=0
+
+#btn_action: width=$_ACTION_BUTTON_WIDTH, height=$_ACTION_BUTTON_HEIGHT, \
+        label-font-family=$SANS_MEDIUM, label-font-size=$_ACTION_TEXT_SIZE, \
+        label-color=$COLOR_WHITE, highlight-label-color=$COLOR_DARK_WHITE, \
+        content-border-radius=$_ACTION_BUTTON_BORDER_RADIUS, content-background-color=$THEME_COLOR_MAIN
+
+/catalog: page-background-color=$THEME_COLOR_BACKGROUND, text-color=$THEME_COLOR_TEXT
+/catalog/content: display=block, position=abs, gravity=center
+/catalog/content/actions: margin-top=$_ACTIONS_TOP_MARGIN

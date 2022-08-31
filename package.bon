@@ -1,0 +1,7 @@
+{
+    id: io.jamkit.samples.ListenAndRepeat,
+    language: en,
+    version: 1.0,
+    title: "Listen and Repeat",
+    description: "AI repeats your words"
+}
